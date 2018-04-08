@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vidlo.du1Vyuka.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Hra">
+            <items>
+              <MenuItem fx:id="newGame" mnemonicParsing="false" onAction="#newGame" text="Nová hra" />
+                  <MenuItem fx:id="endGame" mnemonicParsing="false" onAction="#endGame" text="Koniec hry" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="575.0" prefWidth="819.0">
+         <children>
+         
+		    <Button fx:id="horse" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#picture1">
+		      <graphic>
+		        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/horse.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Kôň" />
+               </tooltip>
+		    </Button>
+		    
+		    <Button fx:id="goat" disable="true" layoutX="586.0" layoutY="14.0" mnemonicParsing="false" onAction="#picture3">
+		      <graphic>
+		        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="586.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/goat.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Koza" />
+               </tooltip>
+		    </Button>
+		    
+		    <Button fx:id="cow" disable="true" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" onAction="#picture2">
+		      <graphic>
+		        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/cow.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Krava" />
+               </tooltip>
+		    </Button>
+		  
+		  <Button fx:id="hen" disable="true" layoutX="300.0" layoutY="228.0" mnemonicParsing="false" onAction="#picture5">
+		      <graphic>
+		        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="300.0" layoutY="228.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/hen.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Sliepka" />
+               </tooltip>
+		    </Button>
+		    
+		    <Button fx:id="dog" disable="true" layoutX="586.0" layoutY="228.0" mnemonicParsing="false" onAction="#picture6">
+		      <graphic>
+		        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="586.0" layoutY="228.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/dog.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Pes" />
+               </tooltip>
+		    </Button>
+		    
+		    <Button fx:id="sheep" disable="true" layoutX="14.0" layoutY="228.0" mnemonicParsing="false" onAction="#picture4">
+		      <graphic>
+		       <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="228.0" pickOnBounds="true">
+               <image>
+                  <Image url="@zdroj/sheep.png" />
+               </image></ImageView>
+		      </graphic>
+		      <tooltip>
+                  <Tooltip text="Ovca" />
+               </tooltip>
+		    </Button>
+		    
+            <Button layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#randomGuess" prefHeight="93.0" prefWidth="107.0" text="Hádaj! Guess!" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Label fx:id="animalEn" layoutX="140.0" layoutY="467.0" prefHeight="70.0" prefWidth="131.0">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="460.0" prefHeight="84.0" prefWidth="131.0" text="Správne odpovede: Correct answers:" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="correct" layoutX="478.0" layoutY="473.0" text="0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="incorrect" layoutX="758.0" layoutY="473.0" text="0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="586.0" layoutY="460.0" prefHeight="84.0" prefWidth="148.0" text="Nesprávne odpovede: Incorrect answers:" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
