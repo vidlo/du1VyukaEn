@@ -1,4 +1,4 @@
-package com.github.vidlo.du1Vyuka;
+package com.github.vidlo.du1VyukaEn;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -211,8 +211,7 @@ public class Controller extends VBox {
 	}
 	
 	/**
-	 * pocatecni nastaveni hodnot pocitadel a textu s hadanym slovem
-	 * pri spusteni hry
+	 * Pociatocna metoda
 	 */
 	public void inicializuj() {
 	}

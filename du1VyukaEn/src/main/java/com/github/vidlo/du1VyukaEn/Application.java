@@ -1,4 +1,4 @@
-package com.github.vidlo.du1Vyuka;
+package com.github.vidlo.du1VyukaEn;
 
 
 
